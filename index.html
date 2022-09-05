@@ -1,60 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="design.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="design.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <h1>Required Market Cap for your coin to reach your desired price.</h1>
-    <script type="text/javascript" src="script.js">
-
-    </script>
-    <!-- <table class="table">
-        <tr>
-            <th>Current Price</th>
-            <th>New Price</th>
-            <th>Market Cap</th>
-            <th>Answer</th>
-        </tr>
-    
-        <tr>
-            <td><input type = "text"
-                id = "info1">
-            </td>
-            <td><input type = "text"
-                id = "info2">
-            </td>
-            <td><input type = "text"
-                id = "info3">
-            </td>
-            <td><input type = "text"
-                id = "Answer" READONLY>
-            </td>
-    
-        </tr>
-       </table>
-    <section>
-        <input type = "button"
-        value = "Calculate"
-        onClick = "javascript:sayHi()"
-        src="script.js"
-        />
-
-</section> -->
-<form action="">
+  <h1>Required Market Cap for your coin to reach your desired price.</h1>
+  <script type="text/javascript" src="script.js">
+  </script>
+  <form action="">
     <input type="number" id="currentPrice" placeholder="Current Price">
     <input type="number" id="newPrice" placeholder="New Price">
     <input type="number" id="marketCap" placeholder="Market Cap">
     <input type="button" id="sub" value="Submit" onclick="marketCalc()">
     <!--<input type="number" id="monthlyCost" name="monthlyCost"> you don't need it-->
+    <input type="reset" onclick="handler" ...>
+
     <div>
-      <p>Required Market Cap: </p><p id="finalMarket"> </p><!-- result will be here -->
+      <p>Required Market Cap: </p>
+      <p id="finalMarket"> </p><!-- result will be here -->
     </div>
   </form>
 
 </body>
-</html>
 
+</html>

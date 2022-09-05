@@ -1,0 +1,13 @@
+html {
+    background-color: grey;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 450px;
+}
+
+.table {
+    display: inline-block;
+    align-items: center;
+    background-color: rgb(90, 68, 68);
+    color: white;
+}

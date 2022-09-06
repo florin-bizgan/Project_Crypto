@@ -44,13 +44,13 @@ img {
 .form_tab {
     display:inline-block;
     position: center;
-    /* background-color: #343e48;
+    background-color: #343e48;
     border-color: solid #f26667;
     height: 180px;
     width: 580px;
     background-color: #555;
     padding-top: 5px;
-    border-radius: 10px; */
+    border-radius: 10px;
 }
 
 

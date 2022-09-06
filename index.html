@@ -17,13 +17,14 @@
     <input type="number" id="currentPrice" placeholder="Current Price">
     <input type="number" id="newPrice" placeholder="New Price">
     <input type="number" id="marketCap" placeholder="Market Cap">
+
     <input type="button" id="sub" value="Submit" onclick="marketCalc()">
     <!--<input type="number" id="monthlyCost" name="monthlyCost"> you don't need it-->
     <input type="reset" onclick="handler" ...>
 
     <div>
-      <p>Required Market Cap: </p>
-      <p id="finalMarket"> </p><!-- result will be here -->
+      <p class="final text_market">Required Market Cap: </p>
+      <p id="finalMarket" class="final result_final"> </p><!-- result will be here -->
     </div>
   </form>
 

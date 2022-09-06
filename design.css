@@ -2,7 +2,7 @@ html {
     background-color: grey;
     color: aliceblue;
     text-align: center;
-    padding-top: 250px;
+    padding-top: 150px;
 }
 
 .table {
@@ -10,4 +10,18 @@ html {
     align-items: center;
     background-color: rgb(90, 68, 68);
     color: white;
+}
+
+.text_market {
+    color:rgb(223, 226, 43);
+}
+
+.result_final {
+    color: rgba(5, 5, 5, 0.932);
+    background-color: aliceblue;
+    width: 550px;
+    display: inline;
+    padding: 5px;
+    border-radius: 5px;
+
 }

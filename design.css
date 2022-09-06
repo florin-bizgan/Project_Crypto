@@ -31,18 +31,25 @@ img {
 /* FORM */
 .text_market {
     color:rgb(223, 226, 43);
+    padding-top: 25px;
+    padding-bottom: 0px;
+}
+
+.final_result{
+    padding-top: 0px;
+    margin-top: 0px;
+    font-size: x-large;
 }
 
 .form_tab {
     display:inline-block;
     background-color: #343e48;
     border-color: solid #f26667;
-    height: 150px;
+    height: 180px;
     width: 580px;
     background-color: #555;
     padding-top: 5px;
     border-radius: 10px;
-    
 }
 
 
@@ -141,3 +148,4 @@ li:nth-child(4) a:after {
 a:hover:after {
   transform: rotateX(0deg) translateZ(0px);
 }
+

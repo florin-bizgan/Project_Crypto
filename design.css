@@ -12,7 +12,8 @@ html {
 body {
     position:relative;
     min-height:110vh;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     /* background-color: #bad7e9; */
     /* background: radial-gradient(closest-corner, #bad7e9 60%, rgba(186, 215, 233, 0.26)); */
     width: 100%;
@@ -40,17 +41,17 @@ img {
     font-size: x-large;
 }
 
-/* .form_tab {
+.form_tab {
     display:inline-block;
-    position:inherit;
-    background-color: #343e48;
+    position: center;
+    /* background-color: #343e48;
     border-color: solid #f26667;
     height: 180px;
     width: 580px;
     background-color: #555;
     padding-top: 5px;
-    border-radius: 10px;
-} */
+    border-radius: 10px; */
+}
 
 
 .sub {
@@ -58,13 +59,16 @@ img {
 }
 
 footer {
-    position:absolute;
-    /* display: grid; */
-    bottom:0%;
-    width:100%;
     background-color:#343e48;
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
     font-family: lato, sans-serif;
+    bottom: 0;
+    height: 100px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+
+    
 }
 
 /* nav

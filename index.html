@@ -10,23 +10,27 @@
 </head>
 
 <body>
+  <img src="market_cycle.png" alt="">
   <h1>Required Market Cap for your coin to reach your desired price.</h1>
   <script type="text/javascript" src="script.js">
   </script>
   <form action="">
     <input type="number" id="currentPrice" placeholder="Current Price">
     <input type="number" id="newPrice" placeholder="New Price">
-    <input type="number" id="marketCap" placeholder="Market Cap">
-
-    <input type="button" id="sub" value="Submit" onclick="marketCalc()">
+    <input type="number" id="marketCap" placeholder="Current Market Cap">
+    <div class="sub buttons">
+      <input type="button" id="sub" value="Submit" onclick="marketCalc()">
     <!--<input type="number" id="monthlyCost" name="monthlyCost"> you don't need it-->
     <input type="reset" onclick="handler" ...>
-
+    </div>
     <div>
       <p class="final text_market">Required Market Cap: </p>
       <p id="finalMarket" class="final result_final"> </p><!-- result will be here -->
     </div>
   </form>
+<footer class="footer">
+  <p>Florin Bizgan 2022</p>
+</footer>
 
 </body>
 

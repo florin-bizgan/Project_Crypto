@@ -97,7 +97,12 @@ body {
     transform: rotateX(0deg) translateZ(0px);
   }
   
-  
+  /* BLOG */
+  .blog {
+    padding-top: 150px;
+  }
+
+
   
   /* FOOTER */
   footer {

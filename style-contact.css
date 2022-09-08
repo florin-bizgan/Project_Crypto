@@ -97,6 +97,10 @@ body {
     transform: rotateX(0deg) translateZ(0px);
   }
   
+  /* CONTACT */
+  .contact {
+    padding-top: 150px;
+  }
   
   
   /* FOOTER */

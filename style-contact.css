@@ -10,7 +10,7 @@ html {
 
 body {
     position:relative;
-    min-height:110vh;
+    min-height:150vh;
     margin: 0;
     padding: 0;
     /* background-color: #bad7e9; */
@@ -104,13 +104,17 @@ body {
   
   
   /* FOOTER */
-  footer {
-      background-color:#343e48;
-      /* margin-bottom: 0px; */
-      font-family: lato, sans-serif;
-      bottom: 0;
-      height: 100px;
-      left: 0;
-      position: absolute;
-      width: 100%;
+footer {
+    background-color:#343e48;
+    /* margin-bottom: 0px; */
+    font-family: lato, sans-serif;
+    bottom: 0;
+    /* height: 100px; */
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.donations {
+    background-color:#343e48;
   }

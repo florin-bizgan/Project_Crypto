@@ -98,6 +98,11 @@ a:hover:after {
   transform: rotateX(0deg) translateZ(0px);
 }
 
+/* Market Logo */
+.market-logo {
+  width: 350px;
+}
+
 /* INFO CARDANO */
 .cardano {
   color: yellowgreen
@@ -123,7 +128,7 @@ a:hover:after {
 /* INFO TAB */
 
 .info-tab {
-    padding-top: 150px;
+    padding-top: 50px;
 }
 
 

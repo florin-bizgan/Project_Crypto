@@ -98,6 +98,27 @@ a:hover:after {
   transform: rotateX(0deg) translateZ(0px);
 }
 
+/* INFO CARDANO */
+.cardano {
+  color: yellowgreen
+}
+
+.price_color {
+  color: #ecc64b;
+}
+
+.cap {
+  text-align:left;
+  background-color: #42413C2E;
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin: 4px;
+  
+}
+
 
 /* INFO TAB */
 

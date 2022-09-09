@@ -3,14 +3,14 @@ html {
     color: aliceblue;
     text-align: center;
     height: 100%;
-    perspective: 1000px;
-    transform-style: preserver-3d;
+    /* perspective: 1000px; */
     font-family: lato, sans-serif;
+    min-height:100vh;
 }
 
 body {
     position:relative;
-    min-height:150vh;
+    min-height:100vh;
     margin: 0;
     padding: 0;
     /* background-color: #bad7e9; */
@@ -19,7 +19,6 @@ body {
     height: 100%;
     /* background-repeat: no-repeat; */
 }
-
 
  /* Nav Menu */
 ul {
@@ -131,15 +130,19 @@ a:hover:after {
     padding-top: 50px;
 }
 
+/* Warning */
+.warning {
+  background-color: black;
+  color: #f26667;
+}
 
 /* FOOTER */
+
 footer {
-    background-color:#343e48;
-    /* margin-bottom: 0px; */
-    font-family: lato, sans-serif;
-    bottom: 0;
-    /* height: 100px; */
-    left: 0;
-    position: absolute;
-    width: 100%;
+  height: 250px;
+  padding-top: 15px;
+  padding-left: 15px;
+  background-color:#343e48;
+  font-family: lato, sans-serif;
+  margin-top: 100px;
 }

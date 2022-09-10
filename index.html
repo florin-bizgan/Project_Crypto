@@ -5,24 +5,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="design.css">
+  <link rel="stylesheet" href="style-index.css">
   <style>
     * {
       margin: 0;
       padding: 0;
-    }
-
+      }
     .imgbox {
       display: grid;
       height: 100%;
-    }
-
+      }
     .center-fit {
       max-width: 100%;
       max-height: 100vh;
       margin: auto;
 
-    }
+      }
   </style>
   <title>Market Cap Calculator</title>
 </head>
@@ -44,7 +42,7 @@
     <input type="number" id="marketCap" placeholder="Current Market Cap">
     <div class="sub buttons">
       <input type="button" id="sub" value="Submit" onclick="marketCalc()">
-      <input type="reset" onclick="handler" ...>
+    <input type="reset" onclick="handler" ...>
     </div>
     <div>
       <p class="final text_market">Required Market Cap: </p>
@@ -55,36 +53,39 @@
   </form>
   <p>This tool was created so it can give roughly an idea of how much growth a certain projects needs so it can reach
     certain price.</p>
-  <br><br><br><br><br>
+    <br><br><br><br><br>
   <h1 class="warning">THIS IS NOT A FINANCIAL ADVICE</h1>
   <br><br><br><br><br>
 
   <script type="text/javascript">
     var today = new Date();
     var day = today.getDay();
-    var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday ", "Thursday", "Friday", "Saturday"];
-    var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+    var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    var dateTime = date + ' ' + time;
-
+    var dateTime = date+' '+time;
+     
     document.getElementById("displayDateTime").innerHTML = dateTime + ' <br> Day :- ' + daylist[day];
-
-  </script>
+   
+    </script>
   <br><br><br><br><br>
-
+  
   <footer class="footer">
     <p>© 2022 Florin Bizgan. </p>
     <p>All rights reserved. </p>
     <p class="donations">
-    <p>Do you appreciate my work? Tips welcome!</p>
-    <p style="margin-bottom:5px;">BTC Address:
-      <span style="color:#ef8e19;">1MzfQp8sAguq4Txwo3GgXka1cmngWg4ogw (Bitcoin)</span>
+        <p>Do you appreciate my work? Tips welcome!</p>
+        <p style="margin-bottom:5px;">BTC Address:
+        <span style="color:#ef8e19;">1MzfQp8sAguq4Txwo3GgXka1cmngWg4ogw (Bitcoin)</span></p>
+        <p style="margin-bottom:5px;">ETH Address:
+        <span style="color:#ef8e19;">0x360dae91dc50d630251c6480c8f3f76e7c054330 (Ethereum - ERC20)</span></p>
+        <p style="margin-bottom:5px;">USDT Address:
+        <span style="color:#ef8e19;">TZ3q9QjZHU538npoUzVMVDMniApLV781dU (Tron - TRC20)</span></p>
     </p>
-    <p style="margin-bottom:5px;">ETH Address:
-      <span style="color:#ef8e19;">0x360dae91dc50d630251c6480c8f3f76e7c054330 (Ethereum - ERC20)</span>
-    </p>
-    <p style="margin-bottom:5px;">USDT Address:
-      <span style="color:#ef8e19;">TZ3q9QjZHU538npoUzVMVDMniApLV781dU (Tron - TRC20)</span>
+    <center>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+    </center>
   </footer>
 
 </body>

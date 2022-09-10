@@ -9,8 +9,8 @@ html {
 
 body {
   position:relative;
-  /* min-height:100vh;   Does not work well on mobile */
-  min-height: 100%;
+  min-height:100vh;   /*Does not work well on mobile */
+  /* min-height: 100%; */
   margin: 0;
   padding: 0;
   width: 100%;
@@ -97,60 +97,66 @@ body {
     transform: rotateX(0deg) translateZ(0px);
   }
 
- /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+  /* CONTACT FORM */
+  
+  @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  width: 650px;
-  margin-top: 100px;
-} 
-  /* CONTACT */
-  .contact {
-    padding-top: 150px;
+  body { background:rgb(30,30,40); }
+  form { max-width:420px; margin:50px auto; }
+  
+  .feedback-input {
+    color:white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #CC6666;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
   }
   
+  .feedback-input:focus { border:2px solid #CC4949; }
   
-  /* FOOTER */
-footer {
-    background-color:#343e48;
-    /* margin-bottom: 0px; */
-    font-family: lato, sans-serif;
-    bottom: 0;
-    /* height: 100px; */
-    left: 0;
-    position: absolute;
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+  
+  [type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     width: 100%;
+    background:#CC6666;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+  }
+  [type="submit"]:hover { background:#CC4949; }
+  
+
+/* FOOTER */
+footer {
+  height: auto;
+  background-color:#343e48;
+  font-family: lato, sans-serif;
+  margin-top: auto;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 .donations {

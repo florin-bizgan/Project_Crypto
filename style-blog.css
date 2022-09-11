@@ -102,6 +102,11 @@ body {
     padding-top: 150px;
   }
 
+  .coming-soon {
+    width: fit-content;
+    max-width: 350px;
+  }
+
 
   
   /* FOOTER */

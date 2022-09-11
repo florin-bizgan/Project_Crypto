@@ -9,8 +9,8 @@ html {
 
 body {
   position:relative;
-  min-height:100vh;   /*Does not work well on mobile */
-  /* min-height: 100%; */
+  /* min-height:100vh;   Does not work well on mobile */
+  min-height: 100%;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -160,5 +160,8 @@ footer {
 }
 
 .donations {
-    background-color:#343e48;
+  position: fixed;
+  background-color: #4795c3;
+  background-color:#343e48;
+  width: 100%
   }

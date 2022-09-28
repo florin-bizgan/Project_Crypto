@@ -1,8 +1,9 @@
-function currencyFormat(num) {
-  return '$' + num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
-}
+// function currencyFormat(num) {
+//   return '$' + num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+// }
+const currencyFormat = num => { return '$' + num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,') }
 
-function marketCalc() {
+const marketCalc = () => {
   var currentPrice;
   var newPrice;
   var marketCap;
@@ -12,9 +13,7 @@ function marketCalc() {
   newPrice = document.getElementById("newPrice").value;
   marketCap = document.getElementById("marketCap").value;
   finalMarket = Math.round((newPrice / currentPrice) * marketCap);
-  console.log(finalMarket);
+  // console.log(finalMarket);
   result.innerHTML = currencyFormat(finalMarket)
   result.insertAdjacentHTML = currencyFormat(newPrice)
 }
-
-

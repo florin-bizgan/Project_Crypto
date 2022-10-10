@@ -10,21 +10,19 @@
     * {
       margin: 0;
       padding: 0;
-    }
-
+      }
     .imgbox {
       display: grid;
       height: 100%;
-    }
-
+      }
     .center-fit {
       max-width: 100%;
       max-height: 100vh;
       margin: auto;
 
-    }
+      }
   </style>
-  <title>Market Cap Calculator, check your coin market cap</title>
+  <title>Market Cap Calculator</title>
 </head>
 
 <body>
@@ -35,23 +33,30 @@
     <li><a href="contact.html" data-title="Contact">Contact</a></li>
   </ul>
   <img src="data/market_cycle.png" alt="">
-  <h1>Required Market Cap to reach your desired price.</h1>
-  <form class="form_tab" action="">
-    <input style="margin-bottom:5px;" type="number" id="currentPrice" placeholder="Current Price">
-    <input style="margin-bottom:5px;" type="number" id="newPrice" placeholder="New Price">
-    <input type="number" id="marketCap" placeholder="Current Market Cap">
-    <div class="sub buttons">
-      <input type="button" id="sub" value="Submit" onclick="marketCalc()">
-      <input type="reset" onclick="handler" ...>
-    </div>
-    <div>
-      <p class="final text_market">Required Market Cap: </p>
-      <p id="newPrice"></p>
-      <p id="finalMarket" class="final final_result"> </p><!-- result will be here -->
-    </div>
-  </form>
-  <p>This tool was created so it can give roughly an idea of how much growth a certain projects needs so it can reach
-    certain price.</p>
+  <div class="box">
+    <h1>Required Market Cap to reach your desired price.</h1>
+    <form class="form_tab" action="">
+      <div class="buttons">
+        <p class="info-text">Insert the current price bellow</p>
+        <input class="buton" style="margin-bottom:5px;" type="number" id="currentPrice" placeholder=" Current Price">
+        <p class="info-text">Insert your desired price bellow</p>
+        <input class="buton" style="margin-bottom:5px;" type="number" id="newPrice" placeholder=" New Price">
+        <p class="info-text">Insert bellow current project Market Cap </p>
+        <input class="buton" type="number" id="marketCap" placeholder=" Current Market Cap">
+        <div class="sub buttons">
+          <input class="buton low" type="button" id="sub" value="Submit" onclick="marketCalc()">
+          <input class="buton low" type="reset" onclick="handler" ...>
+        </div>
+      </div>
+      <div>
+        <p class="final text_market">Required Market Cap: </p>
+        <p id="newPrice"></p>
+        <p id="finalMarket" class="final final_result"> </p><!-- result will be here -->
+      </div>
+    </form>
+    <p>This tool was created so it can give roughly an idea of how much growth a certain projects needs so it can reach
+      certain price.</p>
+  </div>
   <br><br><br><br><br>
   <h1 class="warning">THIS IS NOT A FINANCIAL ADVICE</h1>
   <br><br><br><br><br>
@@ -59,7 +64,8 @@
     <p>© 2022 Florin Bizgan. </p>
     <p>All rights reserved. </p>
   </footer>
-  <script type="text/javascript" src="core/script.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
 </body>
 
 </html>

@@ -3,6 +3,7 @@
 // }
 const currencyFormat = num => { return '$' + num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,') }
 
+//new function updated to const from function, need testing and improvement
 const marketCalc = () => {
   var currentPrice;
   var newPrice;

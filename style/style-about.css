@@ -129,8 +129,12 @@ a:hover:after {
 
 .info-tab {
     padding-top: 50px;
+    color:midnightblue;
 }
 
+.title-text {
+  color:midnightblue;
+}
 /* Warning */
 .warning {
   background-color: black;

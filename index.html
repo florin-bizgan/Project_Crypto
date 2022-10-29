@@ -1,71 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style/style-index.css">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style-index.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
       }
-    .imgbox {
-      display: grid;
-      height: 100%;
+      .imgbox {
+        display: grid;
+        height: 100%;
       }
-    .center-fit {
-      max-width: 100%;
-      max-height: 100vh;
-      margin: auto;
-
+      .center-fit {
+        max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
       }
-  </style>
-  <title>Market Cap Calculator</title>
-</head>
+    </style>
+    <title>Market Cap Calculator</title>
+  </head>
 
-<body>
-  <ul>
-    <li><a href="index.html" data-title="home">Home</a></li>
-    <li><a href="about.html" data-title="About">About</a></li>
-    <li><a href="blog.html" data-title="Blog">Blog</a></li>
-    <li><a href="contact.html" data-title="Contact">Contact</a></li>
-  </ul>
-  <img src="data/market_cycle.png" alt="">
-  <div class="box">
-    <h1>Required Market Cap to reach your desired price.</h1>
-    <form class="form_tab" action="">
-      <div class="buttons">
-        <p class="info-text">Insert the current price bellow</p>
-        <input class="buton" style="margin-bottom:5px;" type="number" id="currentPrice" placeholder="Current Price">
-        <p class="info-text">Insert your desired price bellow</p>
-        <input class="buton" style="margin-bottom:5px;" type="number" id="newPrice" placeholder="New Price">
-        <p class="info-text">Insert bellow current project Market Cap </p>
-        <input class="buton" type="number" id="marketCap" placeholder="Current Market Cap">
-        <div class="sub buttons">
-          <input class="buton low" type="button" id="sub" value="Submit" onclick="marketCalc()">
-          <input class="buton low" type="reset" onclick="handler" ...>
+  <body>
+    <ul>
+      <li><a href="index.html" data-title="home">Home</a></li>
+      <li><a href="about.html" data-title="About">About</a></li>
+      <li><a href="blog.html" data-title="Blog">Blog</a></li>
+      <li><a href="contact.html" data-title="Contact">Contact</a></li>
+    </ul>
+    <img src="data/market_cycle.png" alt="" />
+    <div class="box">
+      <h1>Required Market Cap to reach your desired price.</h1>
+      <form class="form_tab" action="">
+        <div class="buttons">
+          <p class="info-text">Insert the current price bellow</p>
+          <!-- Current Price -->
+          <input
+            class="button"
+            style="margin-bottom: 5px"
+            type="number"
+            id="currentPrice"
+            placeholder="Current Price"
+            alt="Project current price"
+          />
+
+          <p class="info-text">Insert your desired price bellow</p>
+          <!-- New Price -->
+          <input
+            class="button"
+            style="margin-bottom: 5px"
+            type="number"
+            id="newPrice"
+            placeholder="New Price"
+            alt="Project desired price"
+          />
+          <!-- Current Market Cap -->
+          <p class="info-text">Insert bellow current project Market Cap</p>
+          <input
+            class="button"
+            type="number"
+            id="marketCap"
+            placeholder="Current Market Cap"
+            alt="Project current market cap"
+          />
+          <!-- Submit -->
+          <div class="sub buttons">
+            <input
+              class="button low"
+              type="button"
+              id="sub"
+              value="Submit"
+              onclick="marketCalc()"
+            />
+            <input class="button low" type="reset" onclick="" />
+          </div>
         </div>
-      </div>
-      <div>
-        <p class="final text_market">Required Market Cap: </p>
-        <p id="newPrice"></p>
-        <p id="finalMarket" class="final final_result"> </p><!-- result will be here -->
-      </div>
-    </form>
-    <p>This tool was created so it can give roughly an idea of how much growth a certain projects needs so it can reach
-      certain price.</p>
-    <p>This is not a financial advice, this tool is purely designed to give an idea/estimate.</p>
-    <p>This page will be updated with more info or tools.</p>
-  </div>
-  <h1 class="warning">THIS IS NOT A FINANCIAL ADVICE</h1>
-  <footer class="footer">
-    <p>© 2022 Florin Bizgan. </p>
-    <p>All rights reserved. </p>
-  </footer>
-  <script type="text/javascript" src="core/script.js"></script>
-
-</body>
-
+        <div>
+          <p class="final text_market">Required Market Cap:</p>
+          <p id="newPrice"></p>
+          <p id="finalMarket" class="final final_result"></p>
+          <!-- result will be here -->
+        </div>
+      </form>
+      <p>
+        This tool was created so it can give roughly an idea of how much growth
+        a certain projects needs so it can reach certain price.
+      </p>
+      <p>
+        This is not a financial advice, this tool is purely designed to give an
+        idea/estimate.
+      </p>
+      <p>This page will be updated with more info or tools.</p>
+    </div>
+    <h1 class="warning">THIS IS NOT A FINANCIAL ADVICE</h1>
+    <footer class="footer">
+      <p>© 2022 Florin Bizgan.</p>
+      <p>All rights reserved.</p>
+    </footer>
+    <script type="text/javascript" src="core/script.js"></script>
+  </body>
 </html>

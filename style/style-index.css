@@ -74,7 +74,7 @@ img {
   width: 140px;
 }
 
-.buton {
+.button {
   border-radius: 5px;
   height: 25px;
   width: 250px;
@@ -83,7 +83,7 @@ img {
   padding: 2px;
 }
 
-.buton:hover {
+.button:hover {
   background-color: #52c96af7;
   color: white;
 
@@ -143,9 +143,11 @@ a {
   transition: color 200ms;
   transform-style: preserve-3d;
 }
+
 a:hover {
   color: #343e48;
 }
+
 a:after {
   content: attr(data-title);
   position: absolute;
@@ -163,6 +165,7 @@ a:after {
   transition: all 200ms ease;
   z-index: -1;
 }
+
 li:nth-child(2) a:after {
   background: #ecc64b;
 }

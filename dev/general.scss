@@ -31,9 +31,7 @@ body {
   align-items: center;
 }
 // Crypto Cycle Logo
-img {
-  height: auto;
-  width: 30%;
+.responsive {
   padding-bottom: 50px;
   padding-top: 40px;
 }
@@ -291,4 +289,12 @@ footer {
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+/* Mobile */
+@media screen and (max-width:768px) {
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
 }

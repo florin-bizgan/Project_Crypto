@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style-index.css" />
+    <link rel="stylesheet" href="style/general.css" />
     <style>
       * {
         margin: 0;
@@ -24,18 +24,24 @@
   </head>
 
   <body>
+    <!-- Top Menu Bar -->
     <ul>
       <li><a href="index.html" data-title="home">Home</a></li>
       <li><a href="about.html" data-title="About">About</a></li>
       <li><a href="blog.html" data-title="Blog">Blog</a></li>
       <li><a href="contact.html" data-title="Contact">Contact</a></li>
     </ul>
+
+    <!-- This Image needs to be mobile friendly -->
     <img src="data/market_cycle.png" alt="" />
+
+    <!-- This div controls the entire midle screen action -->
     <div class="box">
       <h1>Required Market Cap to reach your desired price.</h1>
       <form class="form_tab" action="">
         <div class="buttons">
           <p class="info-text">Insert the current price bellow</p>
+
           <!-- Current Price -->
           <input
             class="button"
@@ -47,6 +53,7 @@
           />
 
           <p class="info-text">Insert your desired price bellow</p>
+
           <!-- New Price -->
           <input
             class="button"
@@ -56,6 +63,7 @@
             placeholder="New Price"
             alt="Project desired price"
           />
+
           <!-- Current Market Cap -->
           <p class="info-text">Insert bellow current project Market Cap</p>
           <input
@@ -65,16 +73,22 @@
             placeholder="Current Market Cap"
             alt="Project current market cap"
           />
+
           <!-- Submit -->
-          <div class="sub buttons">
+          <div class="buttons pad_top">
             <input
-              class="button low"
+              class="button sub_res submit"
               type="button"
               id="sub"
-              value="Submit"
+              value="Calculate"
               onclick="marketCalc()"
             />
-            <input class="button low" type="reset" onclick="" />
+            <input
+              class="button sub_res reset"
+              type="reset"
+              onclick=""
+              alt="Resets the field inpust"
+            />
           </div>
         </div>
         <div>

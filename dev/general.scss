@@ -13,23 +13,20 @@ $text-advice: #f26667;
 
 html {
   background-color: $color-gray;
-  color: aliceblue;
-  text-align: center;
-  font-family: lato, sans-serif;
   height: 100%;
   width: 100%;
+  margin: 0;
 }
 
 body {
-  position:relative;
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  text-align: center;
+  color: aliceblue;
+  font-family: lato, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 // Crypto Cycle Logo
 .responsive {
   padding-bottom: 50px;
@@ -276,6 +273,7 @@ a:hover:after {
   width: initial;
   padding: 10px;
   margin-top: 125px;
+  margin-bottom: 30px;
 }
 
 /* FOOTER */
@@ -283,12 +281,9 @@ footer {
   height: auto;
   background-color:#343e48;
   font-family: lato, sans-serif;
-  margin-top: auto;
-  position: relative;
-  bottom: 0;
   width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /* Mobile */

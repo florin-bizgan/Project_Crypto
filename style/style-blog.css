@@ -1,15 +1,13 @@
 html {
   background-color: grey;
-  color: aliceblue;
-  text-align: center;
-  font-family: lato, sans-serif;
   height: 100%;
   width: 100%;
 }
 
+
 body {
   position:relative;
-  min-height:100vh;   /*Does not work well on mobile */
+  /* min-height:100vh; */
   /* min-height: 100%; */
   margin: 0;
   padding: 0;
@@ -18,16 +16,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: lato, sans-serif;
 }
 
  /* Nav Menu */
- ul {
+ul {
     display: block;
     text-align: center;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     width: 100%;
-    min-width: 535px;
+    /* min-width: 535px; */
     background-color: #343e48;
     position: relative;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
@@ -117,4 +116,8 @@ footer {
     height: auto;
     position: absolute;
     width: 100%;
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
 }
+

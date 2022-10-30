@@ -67,7 +67,7 @@ body {
   width: 140px;
 }
 .buttons.pad_top {
-  padding-top: 15px;
+  padding-top: 25px;
   display: flex;
   flex-direction: row;
   align-items: center;

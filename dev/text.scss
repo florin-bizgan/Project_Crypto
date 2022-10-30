@@ -1,0 +1,38 @@
+.owners {
+  width:500px;
+  height:300px;
+  border:0px solid #ff9d2a;
+  margin:auto;
+  float:left;
+}
+
+
+span.own1 {
+  background: yellow;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: black;
+  font-style: 15px;
+  height: 45px;
+  width: auto;
+  letter-spacing: 1px;
+  line-height: 20px;
+  position: absolute;
+  text-align: center;
+  // top: auto;
+  // left: auto;
+  display: none;
+  padding: 5 5px;
+}
+
+p.own {
+  margin: 10px;
+  float:  right;
+  position: relative;
+  cursor: pointer;
+}
+
+p.own:hover span {
+  display:flex;
+  z-index:1
+}

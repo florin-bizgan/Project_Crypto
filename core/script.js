@@ -4,7 +4,7 @@
 const currencyFormat = (num) => {
   return num
     ? "$" + num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
-    : "No value inserted";
+    : "No value";
 };
 
 //new function updated to const from function, need testing and improvement
